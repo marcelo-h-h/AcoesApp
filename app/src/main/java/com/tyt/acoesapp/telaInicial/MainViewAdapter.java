@@ -30,9 +30,6 @@ public class MainViewAdapter extends RecyclerView.Adapter<MainViewAdapter.ViewHo
 
     public MainViewAdapter(List<AcaoSocial> actionsList, Context context){
         this.actionsList = actionsList;
-        this.actionsList.add(new AcaoSocial());
-        this.actionsList.add(new AcaoSocial());
-        this.actionsList.add(new AcaoSocial());
         this.context = context;
     }
 

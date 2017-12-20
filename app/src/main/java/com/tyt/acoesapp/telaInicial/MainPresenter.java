@@ -34,7 +34,6 @@ public class MainPresenter {
                 if(actionsListEntity != null){
                     actionsList = actionsListEntity.getAcoesSociais();
                     actionsView.updateList(actionsList);
-                    //actionsView.AtivarRecycler();
                 } else {
                     actionsView.showMessage("Houve um erro");
                 }

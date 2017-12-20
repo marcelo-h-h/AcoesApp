@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tyt.acoesapp.Acoes.Acao">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/action_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                tools:text="ACTION NAME"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textColor="@android:color/primary_text_light"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/image_view_header"
+                android:layout_width="match_parent"
+                android:layout_below="@id/action_nome"
+                android:layout_height="310dp"
+                android:layout_marginBottom="12dp"
+                android:scaleType="fitCenter"/>
+
+
+
+
+            <TextView
+                android:id="@+id/action_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_header"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                tools:text="Description"
+                android:textColor="@android:color/secondary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="12dp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/action_description"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#3498db"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="5dp"
+                android:text="WEBSITE"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>
